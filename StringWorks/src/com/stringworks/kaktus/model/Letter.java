@@ -2,7 +2,7 @@
  * Class that creates that extends Symbol
  * Class has static constant that handles vowels for russian, ukranian and english language.
  * And other static const with strange letters that are not vowels or consonat
- * It stores type of letter
+ * It stores type of letter (consonat or vowel)
  */
 
 package com.stringworks.kaktus.model;
