@@ -11,8 +11,8 @@ package com.stringworks.kaktus.model;
 public class Letter extends Symbol implements Comparable<Letter> {
   boolean vowel=false;
   boolean consonat=false;
-  private static final String VOWELS = "àåı¸ºîşèÿåó³û¿aeiou";
-  private static final String NOT_CONSONAT = "úü";
+  private static final String VOWELS = "Ğ°ĞµÑƒĞ¾Ğ¸ÑÑÑÑ”Ñ–Ñ—Ñ‘Ñ‹aeiou";
+  private static final String NOT_CONSONAT = "ÑŠÑŒ";
 
   public Letter (Character c) {
     super (c);
@@ -28,7 +28,7 @@ public class Letter extends Symbol implements Comparable<Letter> {
     return vowel;
   }
   
-  public boolean isÑonsonant (){
+  public boolean isConsonant (){
     return consonat;
   }
 

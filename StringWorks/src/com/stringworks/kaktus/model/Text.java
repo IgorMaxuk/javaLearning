@@ -71,7 +71,7 @@ public class Text {
         case '?':
           if (i+1<array.length) { // if we have some sentence ending punct mk and string is not ending, 
             result.add(new PunctMark(array[i]));
-            if (!Character.isLetter(array[i]) && !Character.isDigit(array[i])){ // than if this is not construction like Object.toString()
+            if (!Character.isLetter(array[i]) && !Character.isDigit(array[i])){ // than if this is not construction like "Object.toString()"
               text.add(result); // we save our sentence
               result = new Sentence (); // and start another one with redline = false;
             }

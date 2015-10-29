@@ -97,7 +97,7 @@ public class Word  implements Comparable<Word>, PartOfSentence{
       if (element.isVowel()) {
         ++vowelCount;
       }
-      if (element.is—onsonant()) {
+      if (element.isConsonant()) {
         ++consonatCount;
       }
     }

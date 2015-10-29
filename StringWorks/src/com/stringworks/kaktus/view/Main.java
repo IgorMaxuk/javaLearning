@@ -1,9 +1,12 @@
-/**
- * Создать программу обработки текста учебника по программированию с использованием классов: 
- * Символ, Слово, Предложение, Знак препинания и др. 
- * Во всех задачах с формированием текста заменять табуляции и последовательности пробелов одним пробелом.
- * 7.   Рассортировать слова текста по возрастанию доли гласных букв (отношение количества гласных к общему количеству букв в слове).
- */
+/*
+*РЎРѕР·РґР°С‚СЊ РїСЂРѕРіСЂР°РјРјСѓ РѕР±СЂР°Р±РѕС‚РєРё С‚РµРєСЃС‚Р° СѓС‡РµР±РЅРёРєР° РїРѕ РїСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёСЋ СЃ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµРј РєР»Р°СЃСЃРѕРІ: РЎРёРјРІРѕР», РЎР»РѕРІРѕ, 
+*РџСЂРµРґР»РѕР¶РµРЅРёРµ, Р—РЅР°Рє РїСЂРµРїРёРЅР°РЅРёСЏ Рё РґСЂ. 
+*Р’Рѕ РІСЃРµС… Р·Р°РґР°С‡Р°С… СЃ С„РѕСЂРјРёСЂРѕРІР°РЅРёРµРј С‚РµРєСЃС‚Р° Р·Р°РјРµРЅСЏС‚СЊ С‚Р°Р±СѓР»СЏС†РёРё Рё РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕСЃС‚Рё РїСЂРѕР±РµР»РѕРІ РѕРґРЅРёРј РїСЂРѕР±РµР»РѕРј.
+*
+*7. Р Р°СЃСЃРѕСЂС‚РёСЂРѕРІР°С‚СЊ СЃР»РѕРІР° С‚РµРєСЃС‚Р° РїРѕ РІРѕР·СЂР°СЃС‚Р°РЅРёСЋ РґРѕР»Рё РіР»Р°СЃРЅС‹С… Р±СѓРєРІ
+* (РѕС‚РЅРѕС€РµРЅРёРµ РєРѕР»РёС‡РµСЃС‚РІР° РіР»Р°СЃРЅС‹С… Рє РѕР±С‰РµРјСѓ РєРѕР»РёС‡РµСЃС‚РІСѓ Р±СѓРєРІ РІ СЃР»РѕРІРµ).
+*
+*/
 
 package com.stringworks.kaktus.view;
 
@@ -11,7 +14,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.TreeMap;
 
-import com.stringworks.kaktus.controller.FileReader;
+import com.stringworks.kaktus.controller.FileRead;
 import com.stringworks.kaktus.model.Sentence;
 import com.stringworks.kaktus.model.Text;
 import com.stringworks.kaktus.model.Word;
@@ -20,7 +23,7 @@ public class Main {
 
   public static void main(String[] args) {
     try {
-      FileReader reader = new FileReader ("D:/Text2Parse.txt");
+      FileRead reader = new FileRead ("D:/Text2Parse.txt");
       ArrayList<String> arguments = new ArrayList<> (reader.get());
       Text text = new Text();
       for (String element:arguments) {
